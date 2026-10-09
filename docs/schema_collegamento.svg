@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1060" height="660" viewBox="0 0 1060 660" font-family="DejaVu Sans, Arial, sans-serif">
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L8,3 L0,6 z" fill="#c0392b"/>
+    </marker>
+    <marker id="arrowB" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L8,3 L0,6 z" fill="#1f6fb2"/>
+    </marker>
+  </defs>
+
+  <rect x="0" y="0" width="1060" height="660" fill="#ffffff"/>
+
+  <text x="530" y="42" text-anchor="middle" font-size="27" font-weight="bold" fill="#111">
+    Collegamento CYD (ESP32) &#8596; MAX3232 &#8596; Yaesu FT-847
+  </text>
+  <text x="530" y="70" text-anchor="middle" font-size="15" fill="#444">
+    Controllo CAT su RS-232C &#8212; livelli 3.3V TTL lato ESP32, RS-232C lato radio
+  </text>
+
+  <!-- ============ CYD ============ -->
+  <rect x="40" y="110" width="250" height="400" rx="14" fill="#f7e08a" stroke="#b8860b" stroke-width="2"/>
+  <text x="165" y="145" text-anchor="middle" font-size="19" font-weight="bold" fill="#5a4300">CYD</text>
+  <text x="165" y="168" text-anchor="middle" font-size="13" fill="#5a4300">ESP32-2432S028R</text>
+  <text x="165" y="188" text-anchor="middle" font-size="12" fill="#5a4300">(TFT touch 2.8")</text>
+
+  <!-- pins CYD (right edge x=290) -->
+  <circle cx="290" cy="215" r="6" fill="#333"/>
+  <text x="278" y="220" text-anchor="end" font-size="14" font-weight="bold" fill="#222">GPIO22</text>
+  <text x="278" y="238" text-anchor="end" font-size="12" fill="#555">UART2 TX</text>
+
+  <circle cx="290" cy="285" r="6" fill="#333"/>
+  <text x="278" y="290" text-anchor="end" font-size="14" font-weight="bold" fill="#222">GPIO35</text>
+  <text x="278" y="308" text-anchor="end" font-size="12" fill="#555">UART2 RX</text>
+
+  <circle cx="290" cy="355" r="6" fill="#333"/>
+  <text x="278" y="360" text-anchor="end" font-size="14" font-weight="bold" fill="#222">GND</text>
+
+  <circle cx="290" cy="415" r="6" fill="#333"/>
+  <text x="278" y="420" text-anchor="end" font-size="14" font-weight="bold" fill="#222">3V3</text>
+
+  <!-- ============ MAX3232 ============ -->
+  <rect x="390" y="130" width="250" height="360" rx="14" fill="#cfe6ff" stroke="#1f6fb2" stroke-width="2"/>
+  <text x="515" y="165" text-anchor="middle" font-size="19" font-weight="bold" fill="#0b3d66">MAX3232</text>
+  <text x="515" y="187" text-anchor="middle" font-size="13" fill="#0b3d66">RS-232 &#8596; TTL (3.3V)</text>
+
+  <!-- left pins x=390 -->
+  <circle cx="390" cy="215" r="6" fill="#333"/>
+  <text x="402" y="212" font-size="14" font-weight="bold" fill="#222">T1IN</text>
+  <text x="402" y="230" font-size="11" fill="#555">(TTL in)</text>
+
+  <circle cx="390" cy="285" r="6" fill="#333"/>
+  <text x="402" y="282" font-size="14" font-weight="bold" fill="#222">R1OUT</text>
+  <text x="402" y="300" font-size="11" fill="#555">(TTL out)</text>
+
+  <circle cx="390" cy="355" r="6" fill="#333"/>
+  <text x="402" y="360" font-size="14" font-weight="bold" fill="#222">GND</text>
+
+  <circle cx="390" cy="415" r="6" fill="#333"/>
+  <text x="402" y="420" font-size="14" font-weight="bold" fill="#222">VCC 3.3V</text>
+
+  <!-- right pins x=640 -->
+  <circle cx="640" cy="215" r="6" fill="#333"/>
+  <text x="628" y="212" text-anchor="end" font-size="14" font-weight="bold" fill="#222">T1OUT</text>
+  <text x="628" y="230" text-anchor="end" font-size="11" fill="#555">(RS-232 out)</text>
+
+  <circle cx="640" cy="285" r="6" fill="#333"/>
+  <text x="628" y="282" text-anchor="end" font-size="14" font-weight="bold" fill="#222">R1IN</text>
+  <text x="628" y="300" text-anchor="end" font-size="11" fill="#555">(RS-232 in)</text>
+
+  <circle cx="640" cy="355" r="6" fill="#333"/>
+  <text x="628" y="360" text-anchor="end" font-size="14" font-weight="bold" fill="#222">GND</text>
+
+  <!-- ============ FT-847 ============ -->
+  <rect x="730" y="110" width="290" height="400" rx="14" fill="#e9e9e9" stroke="#555" stroke-width="2"/>
+  <text x="875" y="145" text-anchor="middle" font-size="19" font-weight="bold" fill="#222">Yaesu FT-847</text>
+  <text x="875" y="168" text-anchor="middle" font-size="13" fill="#444">Porta CAT</text>
+  <text x="875" y="188" text-anchor="middle" font-size="13" fill="#444">connettore DB-9 (RS-232C)</text>
+
+  <!-- left pins x=730 -->
+  <circle cx="730" cy="215" r="6" fill="#333"/>
+  <text x="742" y="212" font-size="14" font-weight="bold" fill="#222">pin 2</text>
+  <text x="742" y="230" font-size="12" fill="#555">RX (dati in)</text>
+
+  <circle cx="730" cy="285" r="6" fill="#333"/>
+  <text x="742" y="282" font-size="14" font-weight="bold" fill="#222">pin 3</text>
+  <text x="742" y="300" font-size="12" fill="#555">TX (dati out)</text>
+
+  <circle cx="730" cy="355" r="6" fill="#333"/>
+  <text x="742" y="360" font-size="14" font-weight="bold" fill="#222">pin 5</text>
+  <text x="742" y="378" font-size="12" fill="#555">GND</text>
+
+  <!-- ============ Connections ============ -->
+  <!-- TX path: CYD GPIO22 -> MAX T1IN -->
+  <line x1="290" y1="215" x2="390" y2="215" stroke="#c0392b" stroke-width="3" marker-end="url(#arrow)"/>
+  <text x="340" y="205" text-anchor="middle" font-size="11" fill="#c0392b">TTL 3.3V</text>
+
+  <!-- TX path: MAX T1OUT -> FT pin2 -->
+  <line x1="640" y1="215" x2="730" y2="215" stroke="#c0392b" stroke-width="3" marker-end="url(#arrow)"/>
+  <text x="685" y="205" text-anchor="middle" font-size="11" fill="#c0392b">RS-232</text>
+
+  <!-- RX path: FT pin3 -> MAX R1IN -->
+  <line x1="730" y1="285" x2="640" y2="285" stroke="#1f6fb2" stroke-width="3" marker-end="url(#arrowB)"/>
+  <text x="685" y="275" text-anchor="middle" font-size="11" fill="#1f6fb2">RS-232</text>
+
+  <!-- RX path: MAX R1OUT -> CYD GPIO35 -->
+  <line x1="390" y1="285" x2="290" y2="285" stroke="#1f6fb2" stroke-width="3" marker-end="url(#arrowB)"/>
+  <text x="340" y="275" text-anchor="middle" font-size="11" fill="#1f6fb2">TTL 3.3V</text>
+
+  <!-- GND left -->
+  <line x1="290" y1="355" x2="390" y2="355" stroke="#333" stroke-width="3"/>
+  <!-- GND right -->
+  <line x1="640" y1="355" x2="730" y2="355" stroke="#333" stroke-width="3"/>
+  <!-- 3V3 -->
+  <line x1="290" y1="415" x2="390" y2="415" stroke="#e67e22" stroke-width="3"/>
+
+  <!-- ============ Notes ============ -->
+  <rect x="40" y="530" width="980" height="110" rx="10" fill="#fff8e1" stroke="#e0b000" stroke-width="1.5"/>
+  <text x="60" y="558" font-size="14" font-weight="bold" fill="#7a5c00">Note importanti</text>
+  <text x="60" y="582" font-size="13" fill="#333">&#8226; La porta CAT dell'FT-847 &#232; RS-232C: NON collegare mai l'ESP32 direttamente al DB-9 (serve il MAX3232).</text>
+  <text x="60" y="604" font-size="13" fill="#333">&#8226; Verso l'FT-847 serve un cavo/adattatore NULL-MODEM (crossover): pin 2 e 3 incrociati, pin 5 = GND.</text>
+  <text x="60" y="626" font-size="13" fill="#333">&#8226; Se la comunicazione non parte, scambia tra loro TX e RX (non si danneggia nulla). Massa comune obbligatoria.</text>
+
+  <!-- legend -->
+  <line x1="770" y1="553" x2="810" y2="553" stroke="#c0392b" stroke-width="3" marker-end="url(#arrow)"/>
+  <text x="818" y="558" font-size="12" fill="#333">dati CYD &#8594; radio</text>
+  <line x1="770" y1="578" x2="810" y2="578" stroke="#1f6fb2" stroke-width="3" marker-end="url(#arrowB)"/>
+  <text x="818" y="583" font-size="12" fill="#333">dati radio &#8594; CYD</text>
+</svg>
